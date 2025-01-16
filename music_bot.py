@@ -118,9 +118,9 @@ async def roll_error(ctx, error):
  
 if __name__ == '__main__':
     # check that token exists in environment
-    '''if 'BOT_TOKEN' not in os.environ:
+    if 'BOT_TOKEN' not in os.environ:
         log_msg('save your token in the BOT_TOKEN env variable!', 'error')
-        exit(-1)'''
- 
+        exit(-1)
+    TOKEN = os.getenv("BOT_TOKEN")
     # launch bot (blocking operation)
-    bot.run("MTMwOTQzMDUyNTI4NjU1MTU5NA.G8BwQv.s5tscmpDm3g0kOghOSZgM043zFFUTB-nvJQW5g")
+    bot.run("TOKEN")
